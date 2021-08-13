@@ -1,0 +1,70 @@
+.calcontainer {
+    margin: 150px auto;
+    max-width: 960px;
+}
+
+
+
+.Activity_timeline ul li .activity_wrap {
+    position: relative;
+    padding-left: 27px;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.today-court h4 {
+    text-align: center;
+}
+
+.edittoday ul {
+    margin-bottom: 20px;
+}
+
+.edittoday p {
+    text-align: start;
+}
+
+.Activity_timeline {
+position: relative;
+}
+
+.Activity_timeline ul li {
+position: relative;
+margin-bottom: 15px;
+}
+
+.Activity_timeline ul li:last-child {
+margin-bottom: 0px;
+}
+
+.Activity_timeline ul li .activity_bell {
+background: #fd7e14;
+width: 14px;
+height: 14px;
+border-radius: 50%;
+position: absolute;
+top: 23px;
+}
+
+.Activity_timeline ul li .activity_bell.bell_lite {
+opacity: .19;
+}
+
+
+.Activity_timeline ul li .activity_wrap {
+position: relative;
+padding-left: 27px;
+}
+
+
+.Activity_timeline ul li .activity_wrap p {
+font-size: 14px;
+line-height: 25px;
+color: #ADB8C7;
+font-weight: 400;
+text-align: start;
+}
+

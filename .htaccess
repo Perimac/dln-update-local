@@ -1,0 +1,68 @@
+RewriteEngine On
+
+DirectoryIndex index.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+
+
+RewriteRule ^tech$ tech.php
+
+RewriteRule ^detail/([0-9]+)$ details.php?techid=$1
+RewriteRule ^search/([a-zA-Z0-9-_+]+)$ search.php?value=$1
+
+
+
+RewriteRule ^international$ international.php
+RewriteRule ^interviewall/(.*)$ interviewall.php?subcat=$1
+RewriteRule ^interviewdetails/([0-9]+)$ interviewdetails.php?interviewid=$1
+
+RewriteRule ^general/(.*)$ general.php?gencat=$1
+RewriteRule ^categorydetail$ categorydetail.php?value=$1
+
+RewriteRule ^courtnews$ courtnews.php
+RewriteRule ^courtdiary$ courtdiary.php
+RewriteRule ^justices$ justices.php
+RewriteRule ^history$ courthistory.php
+RewriteRule ^resource$ courtresource.php
+RewriteRule ^happilex$ happilex.php
+RewriteRule ^happilex-details/([0-9]+)$ happilexdetails.php?hapid=$1
+
+RewriteRule ^subscribe-news-letter$ post_subscription.php
+RewriteRule ^contact$ contact.php
+RewriteRule ^store$ store.php
+RewriteRule ^terms$ terms.php
+RewriteRule ^policy$ privacy.php
+RewriteRule ^lawfirms/(.*)$ lawfirm_detail.php?firm=$1
+RewriteRule ^postComment$ post_comment.php
+RewriteRule ^postHappilexComment$ post_happilex_comment.php
+
+
+RewriteRule ^courtDiaryFlutter$ flutter_courtdiary.php
+RewriteRule ^historyFlutter$ flutter_courthistory.php
+RewriteRule ^resourcesFlutter$ flutter_courtresources.php
+RewriteRule ^lawfirmsFlutter$ flutter_lawfirms.php
+RewriteRule ^legalWorkFlutter$ flutter_legalwork.php
+RewriteRule ^legalWorkDetailFlutter/(.*)$ flutter_lawfirm_detail.php?firm=$1
+RewriteRule ^termsFlutter$ flutter_terms.php
+RewriteRule ^policyFlutter$ fluttser_policy.php
+RewriteRule ^contactUsflutter$ flutter_contact_us.php
+RewriteRule ^opinions-features$ opinionfeat.php
+RewriteRule ^opinion-category/(.*)$ opinioncategory.php?ofcat=$1
+RewriteRule ^opinion-category-details/([0-9]+)$ opinioncategorydetails.php?ofcatid=$1
+RewriteRule ^load-more$ postloadmore.php
+
+
+RewriteRule ^opinion-preview/(.*)$ opfeat.php?id=$1
+
+
+
+
+
+#ALL PREVIEWS
+RewriteRule ^preview/([0-9]+)$ preview.php?interviewid=$1
+#RewriteRule ^opinfeature-preview/([0-9]+)$ opinfeatpreview.php?ofid=$1
+
+
+
+
