@@ -9,6 +9,8 @@ if (isset($_GET["interviewid"])) {
 
 $result = $dbfunc->getPreviewRow();
 
+echo $result;
+
 ?>
 
 <link rel="stylesheet" href="../assets/css/bootstrap.min.css%2bowl.carousel.min.css%2bticker-style.css%2bflaticon.css%2bslicknav.css%2banimate.min.css%2bmagnific-popup.css%2bfontawesome-all.min.css%2bthemify-ico" />
@@ -38,7 +40,7 @@ $result = $dbfunc->getPreviewRow();
                                 </a>
                                 <span class="m-rl-3">-</span>
                                 <span>
-                                    <?php echo $result['date_added']; ?>
+                                    <?php echo strtotime($result['date_added']); ?>
                                 </span>
                             </span>
                             <span class="f1-s-3 cl8 m-r-15">
@@ -49,7 +51,7 @@ $result = $dbfunc->getPreviewRow();
                             </a>
                         </div>
                         <div class="wrap-pic-max-w p-b-30">
-                            <img src="<?php echo $baseImageUrl.$result['image_url']?>_0.png" alt="IMG">
+                            <img src="<?php echo $basePreviewImageUrl.$result['image_url']?>_0.png" alt="IMG">
                         </div>
                         <p class="f1-s-11 cl6 p-b-25">
                             <?php echo html_entity_decode($result['news_body']); ?>
@@ -131,7 +133,7 @@ $result = $dbfunc->getPreviewRow();
             <div class="col-md-10 col-lg-4 p-b-30">
                 <div class="p-l-10 p-rl-0-sr991 p-t-70">
 
-                    <div class="p-b-30">
+                    <!-- <div class="p-b-30">
                         <div class="how2 how2-cl4 flex-s-c">
                             <h3 class="f1-m-2 cl3 tab01-title">
                                 Features
@@ -180,7 +182,7 @@ $result = $dbfunc->getPreviewRow();
                                 }
                                 ?>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

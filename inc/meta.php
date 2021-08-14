@@ -3,11 +3,14 @@
   include 'runners/DB_Functions.php';
   $dbfunc = new DB_Functions();
   $accounts = $dbfunc->getAllSocialMedia();
-  $baseUrl = "http://dennislawnews.com/";
+  $baseUrl = "http://localhost/dln-update-local/";
   $shareBase = "google.com/dln-update/";
-  $baseFileUrl = "http://dennislawnews.com";
+  $baseFileUrl = "http://localhost/dln-update-local";
   $baseImageUrl = $baseFileUrl."croppedimages/";
+  $basePreviewImageUrl = "http://localhost/lawdashboard-local/croppedimages/"
  ?>
+
+<!-- localhost/dln-update-local -->
 
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">

@@ -365,7 +365,7 @@ $offset = count($response);
 
     function loadMore() {
         $.ajax({
-            url: "http://dennislawnews.com/load-more",
+            url: "http://localhost/dln-update-local/load-more",
             type: "POST",
             data: {
                 opinion_features_category: '<?php echo $ofCat?>',

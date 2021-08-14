@@ -3,9 +3,9 @@
 include 'runners/DB_Functions.php';
 $dbfunc = new DB_Functions();
 $accounts = $dbfunc->getAllSocialMedia();
-$baseUrl = "http://dennislawnews.com/";
+$baseUrl = "http://localhost/dln-update-local/";
 $shareBase = "google.com/dln-update/";
-$baseFileUrl = "http://dennislawnews.com";
+$baseFileUrl = "http://localhost/dln-update-local";
 $baseImageUrl = $baseFileUrl . "croppedimages/";
 
 
